@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoveMeter</title>
+    <title>zenzen</title>
 
     <!-- <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
@@ -16,36 +16,52 @@
 
 <body>
     <div class="header">
-        <h1>Love Meter</h1>
-        <p>Let's See your chemistry</p>
+        <h1>Randomize your zen</h1>
+        <p>are you lucky today💌</p>
     </div>
 
-    <!-- ini container -->
+    <!-- ini container  -->
     <div class="container">
 
-        <!-- input untuk pasangan ke 1 -->
-        <div class="user">
-            <div id="p1">
-                <p class="username">Masukkan Nama Kamu :</p>
-                <input type="text" class="inputForm" id="inputA" onfocus="this.value =''" value="Nama Kamu">
-                <div id="generateP1">0%</div>
+        <!-- bagian input -->
+        <div class="item">
+            <div class="containerSection2">
+                <div class="p">
+                    <p class="username">Masukkan Nama Kamu :</p>
+                    <input type="text" class="inputForm" id="inputA" onfocus="this.value =''" value="Nama Kamu">
+                    <br>
+                    <br>
+                    <div id="generateP1">0%</div>
+                </div>
+    
+                <div class="p">
+                    <p class="username">Masukkan Nama Pasanganmu :</p>
+                    <input type="text" class="inputForm" id="inputB" onfocus="this.value =''" value="Nama Kamu">
+                    <br>
+                    <br>           
+                    <div id="generateP2">0%</div>
+                </div>
             </div>
-
-            <div id="p2">
-                <p class="username">Masukkan Nama Pasanganmu :</p>
-                <input type="text" class="inputForm" id="inputB" onfocus="this.value =''" value="Nama Kamu">
-                <div id="generateP2">0%</div>
+        </div>
+        
+        <!-- bagian button -->
+        <div class="item">
+            <div class="btnInput">
+                <input type="button" class="button" value="Generate your Number" onclick="generateNumber()">
+                <br>
+                <br>
+                <div id="result">
+                    Hmm...
+                </div>
             </div>
-            <br>
-            <br>
         </div>
-
-        <div class="btnInput">
-            <input type="button" class="button" value="Generate your Number" onclick="generateNumber()">
+        <!-- bagian sosial media -->
+        <div class="item">
+            <div class="trakteer">
+                <p>Support Me :</p>
+                <a href="https://trakteer.id/NekoTropic" target="_blank" class="trakteer"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-1.png?date=18-11-2023" height="40" style="border:0px;height:40px;" alt="Trakteer Saya"></a>
+            </div>
         </div>
-    </div>
-    <div class="sosmed">
-        <a href="https://trakteer.id/NekoTropic" target="_blank"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-red-1.png?date=18-11-2023" height="40" style="border:0px;height:40px;" alt="Trakteer Saya"></a>
     </div>
     
 </body>
