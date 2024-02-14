@@ -1,0 +1,72 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+* {
+    font-family: 'Pixelify Sans', sans-serif;
+}
+body {
+    /* font-family: 'Montserrat'; */
+    font-family: 'Pixelify Sans', sans-serif;
+    color: rgb(49, 49, 49);
+    height: 100vh;
+    width: 100vw;
+}
+.header {
+    text-align: center;
+}
+h1 {
+    font-weight: bold;
+    font-size: 48px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    ;
+}
+
+.username {
+    margin: auto;
+    padding: 5px;
+}
+
+.inputForm {
+    font-weight: 100;
+    font-size: 18px;
+    border-radius: 10px;
+    text-size-adjust: 11px;
+    width: 300px;
+    height: 30px;
+    padding: 5px 15px;
+}
+
+.button {
+    font-family: 'Pixelify Sans', sans-serif;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 240, 102);
+    padding: 10px 30px;
+    transition-timing-function: ease-in;
+    background-color: rgb(226, 79, 69);
+    color: aliceblue;
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px solid rgb(226, 79, 69);
+    color: rgb(226, 79, 69);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24),0 5px 
+}
+
+.button:active {
+    transform: translateY(4px);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24),0 1px 
+}
+
+.sosmed {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    /* background-color: red; */
+
+}
