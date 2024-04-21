@@ -1,26 +1,20 @@
+var button = document.getElementById("mybtn");
+var valueA = document.getElementById("inputA");
+var valueB = document.getElementById("inputB");
+var generateP1 = document.getElementById("generateP1");
+var generateP2 = document.getElementById("generateP2");
 
-function generateNumber() {
-    var valueA = document.getElementById('inputA');
-    var lengthA = valueA.value.length;
+function handler() {
+    let x = Math.floor(Math.random() * 100) + 1;
+    let y = Math.floor(Math.random() * 100) + 1;
     
-    var valueB = document.getElementById('inputB');
-    var lengthB = valueB.value.length;
+    console.log(x);
+    console.log(y);
 
+    generateP1.innerHTML = x + "%";
+    generateP2.innerHTML = y + "%";
 
-    
-    console.log('Ini length A',lengthA);
-    console.log('Ini length B',lengthB);
-
-    let x = Math.floor((Math.random() * 100) + 1);
-    let y = Math.floor((Math.random() * 100) + 1);
-
-    // console.log(x)
-    document.getElementById("generateP1").innerHTML = x,"%";
-    document.getElementById("generateP2").innerHTML = y;
-    console.log('ini console x',x);
-    console.log('ini console y',y);
-
-    var z = (x + y)  / 2;
+    var z = (x + y) / 2;
 
     if (z >= 50) {
         document.getElementById("result").innerHTML = "Kayanya pikir-pikir lagi deh 😏";
@@ -28,8 +22,20 @@ function generateNumber() {
         document.getElementById("result").innerHTML = "Tancap aja mANKKKK 💌";
     }
 
-    // document.getElementById("result").innerHTML = z;
-    // console.log(z);
-    
-
 }
+
+
+function generateNumber() {
+    setTimeout(handler, 500);
+    // generateP1.innerHTML = "0%";
+    // generateP2.innerHTML = "0%";
+    console.log(valueA)
+}
+
+
+// Reset input placeholder and enable button after 3 seconds
+// setTimeout(function () {
+//     button.disabled = false;
+//     valueA.placeholder = "ketik disini";
+//     valueB.placeholder = "ketik disini";
+// }, 1000);
